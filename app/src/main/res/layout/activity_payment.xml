@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/log_bac"
+    tools:context=".page.PaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Payment From"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/purple_700"
+                android:textSize="28dp">
+
+
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/name_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/id_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Student Id"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+            <EditText
+                android:id="@+id/taka_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Amount"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/section_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Bkash Number"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+            <EditText
+                android:id="@+id/batch_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Tex Id"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+
+
+
+            <EditText
+                android:id="@+id/dept_tour_regi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/from_btn"
+                android:ems="10"
+                android:fontFamily="@font/didact_gothic"
+                android:hint="Payment (Drive Link)"
+                android:inputType="textPersonName"
+                android:padding="8dp" />
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="Optional screenshort" />
+
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/botton_color"
+
+                android:fontFamily="@font/didact_gothic"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/howtopay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/didact_gothic"
+                android:text="How To Payment"
+                android:textAlignment="center"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

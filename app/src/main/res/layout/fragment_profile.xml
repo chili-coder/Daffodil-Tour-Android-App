@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@drawable/bd_bottom"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/sohagh"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/didact_gothic"
+            android:text="@string/full_name"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/didact_gothic"
+            android:text="@string/email"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/round_btn"
+            android:fontFamily="@font/didact_gothic"
+            android:text="@string/edit_profile"
+
+            android:textAlignment="center"
+
+            android:textAllCaps="false"></Button>
+
+
+
+
+    </LinearLayout>
+
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:paddingStart="16dp"
+           android:paddingEnd="16dp"
+
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/blue"
+               android:orientation="horizontal"
+               android:layout_marginTop="14dp">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:padding="10dp"
+                   android:layout_height="50dp"
+                   android:background="@color/purple_700"
+                   android:layout_marginEnd="10dp"
+
+                   android:src="@drawable/ic_id"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/student_id"
+                       android:textColor="@color/white"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/student_id_no"
+                       android:textColor="@color/white" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/blue"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:padding="10dp"
+
+                   android:background="@color/purple_700"
+                   android:layout_marginEnd="10dp"
+                   android:src="@drawable/ic_phone"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/phone_title"
+                       android:textColor="@color/white"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/phone"
+                       android:textColor="@color/white" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/blue"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:padding="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:background="@color/purple_700"
+                   android:src="@drawable/ic_batch"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/batch"
+                       android:textColor="@color/white"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/batch_tittle"
+                       android:textColor="@color/white" />
+
+               </LinearLayout>
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/blue"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:padding="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:background="@color/purple_700"
+                   android:src="@drawable/ic_dept"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/department"
+                       android:textColor="@color/white"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/department_title"
+                       android:textColor="@color/white" />
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/blue"
+               android:orientation="horizontal"
+               android:layout_marginTop="5dp">
+
+               <ImageView
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:padding="10dp"
+                   android:layout_marginEnd="10dp"
+                   android:background="@color/purple_700"
+                   android:src="@drawable/ic_fb"/>
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/social_link"
+                       android:textColor="@color/white"
+                       android:textStyle="bold" />
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:fontFamily="@font/didact_gothic"
+                       android:text="@string/social_link_here"
+                       android:textColor="@color/white" />
+
+               </LinearLayout>
+
+
+
+           </LinearLayout>
+
+
+
+
+
+
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

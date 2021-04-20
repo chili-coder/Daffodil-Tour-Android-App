@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">DIU TOUR</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="api_url">sohaghlab.com</string>
+
+    ///profile text here////
+    <string name="full_name">Md Sohagh</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="student_id">Student ID</string>
+    <string name="student_id_no">"2429"</string>
+    <string name="phone_title">Phone</string>
+    <string name="phone">+880 1701 88****</string>
+    <string name="batch">Batch</string>
+    <string name="batch_tittle">26th</string>
+    <string name="department">Department</string>
+    <string name="social_link">Social Link</string>
+    <string name="social_link_here">www.fb.com/m.sohagh.m</string>
+    <string name="department_title">Dept of SWE</string>
+    <string name="email_title">Email</string>
+    <string name="email">sohagh35-2429@diu.edu.bd</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    ////post////
+    <string name="cox">কক্সবাজার সমুদ্র সৈকত বাংলাদেশের কক্সবাজারে অবস্থিত একটি সৈকত। ১৫০ কিলোমিটার (৯৩ মাইল) দীর্ঘ এই সৈকত পৃথিবীর দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত।[১][২][৩][৪][৫] তবে অস্ট্রেলিয়ার ১৫১ কিলোমিটার (৯৪ মাইল) দীর্ঘ নব্বই মাইল সমুদ্র সৈকত বর্তমানে পৃথিবীর দীর্ঘতম সৈকত, যদিও অস্ট্রেলিয়ার সৈকতটির কিছু অংশ মনুষ্যসৃষ্ট।[৬] কক্সবাজার সমুদ্র সৈকত বাংলাদেশের সবচেয়ে জনপ্রিয় পর্যটন আকর্ষণ।[৭][৮] প্রতিদিন অসংখ্য পর্যটক এই সৈকতে আসেন।</string>
+    <string name="des1">At this moment there is no policy to cancel courses. We welcome all prospective students.</string>
+    <string name="des2">The most beautiful forest in Bangladesh is Sundarban forest, it is a UNESCO world heritage site densely covered with the forest.  This forest protects the royal Bengal tiger and considered to be one of the largest reserves. The beauty of Sundarban national park is charmed by captivating flora and fauna like aqua-fauna, avifauna, reptiles, and predators. One can enjoy the entire day at this national park which is immensely beautiful.</string>
+    <string name="des3">it is the largest city of Sylhet division of Bangladesh.  Tourists can also enjoy the shopping at Al Hamra, Bluewater, Millennium, Aarong, Kumarpara etc. The beauty of Tamabil- Jaflong, Sri Mahalaxmi temple, the largest tea garden, and Lawacherra rain forest are the beautiful eye-catching places. Tourists enjoy visiting here which offers many amazing things and places to explore and enjoy.</string>
+    <string name="des4">বাংলাদেশের একমাত্র প্রবাল দ্বীপ সেন্টমার্টিন৷ স্থানীয়ভাবে জায়গাটি নারিকেল জিঞ্জিরা নামেও পরিচিত৷  টেকনাফ থেকে ৩৫ কিলোমিটার সমুদ্রগর্ভে এই দ্বীপের অবস্থান৷ প্রায় ১৬ বর্গকিলোমিটার দীর্ঘ এ দ্বীপের আকর্ষণ সৈকত জুড়ে সারিসারি নারিকেল গাছ, বেলাভূমিতে প্রবাল পাথর, দিগন্তজুড়ে সমুদ্রের নীল জলরাশির মনমাতানো সৌন্দর্য৷ ছোট্ট এই দ্বীপটিতে বৈচিত্র্য ঠাসা৷ উত্তর থেকে দক্ষিণ আর পুর্ব থেকে পশ্চিম, সব জায়গাতেই সৌন্দর্যের পসরা৷ যেমন, উত্তরের সৈকতে জোয়ারভাটায় জেলেদের মাছ ধরা, পশ্চিমের সৈকতে সারিসারি নারিকেল বাগান৷ পূর্ব আর দক্ষিণ পাশের সৈকতজুড়ে মৃত প্রবালের সঙ্গে নীলসমুদ্র৷ এত নীল পানির সমুদ্র বাংলাদেশের আর কোথাও নেই৷</string>
+    <string name="des5">এখানে রয়েছে বেড়ানোর মতো সুন্দর সব জায়গা৷
+বান্দরবান শহরের এক পাশেই আছে বোমাং রাজার বাড়ি৷ বোমাং রাজার উত্তরসূরীরা এখন বসবাস করেন এ বাড়িতে৷ আর বান্দরবান শহরের পাশ দিয়েই বয়ে গেছে সাঙ্গু নদী৷বান্দরবান শহর থেকে প্রায় চার কিলোমিটার দূরে বান্দরবান চন্দ্রঘোনা সড়কের পুল পাড়ায় জাদির পাহাড়ে আছে স্বর্ণ মন্দির৷ বৌদ্ধ ধর্মাবলম্বীদের এ মন্দিরের নাম বুদ্ধধাতু জাদি৷ শহর থেকে প্রায় পাঁচ কিলোমিটার দূরে বান্দরবান-চট্টগ্রাম সড়কের পাশে মেঘলা পর্যটন কমপ্লেক্স৷ প্রকৃতির কোলে এখানে আছে ঝুলন্ত সেতু, চিড়িয়াখানা আর হ্রদ৷</string>
+    <string name="des6">এখানেও ভ্রমণের অনেক জায়গা রয়েছে৷ চট্টগ্রাম থেকে এই জেলা শহরের দূরত্ব প্রায় ১২২ কিলোমিটার৷ চারিদিকে পাহাড়ের মাঝে অনেকটা সমতলে এই শহর৷
+খাগড়াছড়ির সবচেয়ে উল্লেখযোগ্য ভ্রমণের জায়গা হলো আলুটিলা পাহাড়৷ জেলা শহর থেকে প্রায় আট কিলোমিটার পশ্চিমে মহাসড়কের পাশেই রয়েছে এই পাহাড়৷ প্রায় এক হাজার ফুট উঁচু পাহাড়ের চূড়ায় দাঁড়ালে পুরো খাগড়াছড়ি শহরকে পাখির চোখে দেখা যায়৷ আলুটিলা পাহাড়ের আরেকটি আকর্ষণীয় জায়গা হলো এর নিচের গুহাপথ৷ পাহাড়ের নীচে গুহার ভেতর দিয়ে বয়ে চলছে শীতল জলধারা৷
+আলুটিলা পাহাড় থেকে তিন কিলোমিটার দূরে রিসাং ঝরনাটিও বেশ সুন্দর৷ আর শহর থেকে প্রায় ১৫ কিলোমিটার দক্ষিণে নুনছড়ির পাহাড় চূড়ায় দেবতার পুকুরও মনোরাম জায়গা৷ </string>
+    <string name="des7">শ্রীমঙ্গলে বেশ কিছু সুন্দর চা বাগান আছে৷ বিভিন্ন জায়গায় ঘুরে বেড়ানোর সময় চারিদিকে চোখে পড়বে শুধুই চা বাগান আর চা বাগান৷ পছন্দসই যে কোনো বাগানে কর্তৃপক্ষের অনুমতি নিয়ে দেখতে পারেন৷
+শ্রীমঙ্গলে পর্যটকদের থাকার জন্য গড়ে উঠেছে বিভিন্ন মানের হোটেল রিসোর্টও৷ তাই চা বাগান বেড়ানোর সাথে সাথে এখানে আরো বেড়াতে পারেন বাইক্কা বিল৷ এ বিল অতিথি পাখির অন্যতম অভয়াশ্রম৷ শ্রীমঙ্গলের সীমান্তবর্তী থলই এলাকায় আছে বীর শ্রেষ্ঠ হামিদুর রহমান স্মৃতি সৌধ৷ আর কমলগঞ্জের মাধবপুর লেকও শ্রীমঙ্গল থেকে খুবই কাছের একটি দর্শনীয় স্থান৷
+বাগেরহা প্রাচীন মসজিদের একটি শহর বাগেরহাট৷ বেশ কিছু প্রাচীন মসজিদ এখানকার অন্যতম পর্যটন আকর্ষণ৷ ঐতিহাসিক ষাট গম্বুজ মসজিদসহ খানজাহান আলীর এসব প্রাচীন স্থাপনা ইউনেস্কো বিশ্ব ঐতিহ্যের অংশ৷</string>
+
+
+</resources>
