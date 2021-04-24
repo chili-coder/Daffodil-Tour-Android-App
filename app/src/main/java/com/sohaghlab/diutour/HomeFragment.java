@@ -84,6 +84,8 @@ public class HomeFragment extends Fragment implements PostAdapter.postAdapterDet
 
 
 
+
+
       recyclerview.setAdapter(new PostAdapter(this,postholder));
 
 

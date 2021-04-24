@@ -103,7 +103,7 @@
         android:drawableTint="@color/blue"
         android:fontFamily="@font/didact_gothic"
         android:text="Login"
-        android:onClick="Login"
+
         android:textSize="18dp"
 
         android:textAllCaps="false"

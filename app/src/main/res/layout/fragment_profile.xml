@@ -26,6 +26,19 @@
         android:background="@drawable/bd_bottom"
         >
 
+        <TextView
+            android:id="@+id/logout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:fontFamily="@font/assistant_bold"
+            android:gravity="end"
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
         <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="80dp"
             android:layout_height="80dp"
@@ -33,6 +46,7 @@
             android:src="@drawable/sohagh"/>
 
         <TextView
+            android:id="@+id/nameProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -43,6 +57,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/emailProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/didact_gothic"
@@ -51,16 +66,17 @@
             android:textColor="@color/white" />
 
         <Button
+            android:id="@+id/editProfile"
             android:layout_width="150dp"
             android:layout_height="40dp"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/round_btn"
             android:fontFamily="@font/didact_gothic"
+
             android:text="@string/edit_profile"
 
             android:textAlignment="center"
-
             android:textAllCaps="false"></Button>
 
 
@@ -109,10 +125,11 @@
                        android:textStyle="bold" />
 
                    <TextView
+                       android:id="@+id/studentidProfile"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:fontFamily="@font/didact_gothic"
-                       android:text="@string/student_id_no"
+                       android:text=""
                        android:textColor="@color/white" />
 
                </LinearLayout>
@@ -152,7 +169,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:fontFamily="@font/didact_gothic"
-                       android:text="@string/phone"
+                       android:text=""
                        android:textColor="@color/white" />
 
                </LinearLayout>
@@ -191,7 +208,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:fontFamily="@font/didact_gothic"
-                       android:text="@string/batch_tittle"
+                       android:text=""
                        android:textColor="@color/white" />
 
                </LinearLayout>
@@ -230,7 +247,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:fontFamily="@font/didact_gothic"
-                       android:text="@string/department_title"
+                       android:text=""
                        android:textColor="@color/white" />
 
                </LinearLayout>
@@ -271,7 +288,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content"
                        android:fontFamily="@font/didact_gothic"
-                       android:text="@string/social_link_here"
+                       android:text=""
                        android:textColor="@color/white" />
 
                </LinearLayout>

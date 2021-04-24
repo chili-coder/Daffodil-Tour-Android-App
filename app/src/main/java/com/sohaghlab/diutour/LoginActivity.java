@@ -38,13 +38,15 @@ import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText ed_email, ed_password;
+    EditText email, password;
 
     String str_email, str_password;
  Button login;
     TextView signUp;
     private ProgressDialog dialog;
     private static final String apiurl = "http://sohaghlab.com/tour/login.php";
+    private static final String apiurl2 = "http://sohaghlab.com/tour/signin.php";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +54,15 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        ed_email = findViewById(R.id.login_email);
-        ed_password = findViewById(R.id.login_password);
+        email = findViewById(R.id.login_email);
+        password = findViewById(R.id.login_password);
+        login=findViewById(R.id.login_btn);
+
+
+        dialog = new ProgressDialog(this);
+
+        dialog.setTitle("Login");
+        dialog.setMessage("Please Wait Loading");
 
 
         signUp = findViewById(R.id.signup);
@@ -67,6 +76,24 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                String mEmail=email.getText().toString().trim();
+                String mPass=password.getText().toString().trim();
+                if (!mEmail.isEmpty() || !mPass.isEmpty()){
+
+                    Login(mEmail,mPass);
+                }else{
+                    email.setError("Insert Email");
+                    password.setError("Insert Password");
+                }
+
+
+            }
+        });
+
 
 
 
@@ -74,14 +101,100 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    public void Login( View view) {
+    private void Login(String email, String password){
+
+        dialog.show();
+
+        StringRequest stringRequest= new StringRequest(Request.Method.POST, apiurl2, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    String result =jsonObject.getString("status");
+
+                JSONArray jsonArray =jsonObject.getJSONArray("data");
+
+                    if(result.equals("success")) {
+
+                        for (int i=0; i<jsonArray.length(); i++){
+
+                            JSONObject object = jsonArray.getJSONObject(i);
+                            String name= object.getString("name");
+                            String email= object.getString("email");
+                            String studentid= object.getString("studentid");
+
+                            Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                            intent.putExtra("name",name);
+                            intent.putExtra("email",email);
+                            intent.putExtra("studentid",studentid);
+                            startActivity(intent);
+                            finish();
+
+
+                            Toast.makeText(LoginActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
+                        }
+
+
+
+                       // startActivity(new Intent(LoginActivity.this, MainActivity.class));
+
+                        dialog.dismiss();
+                    } else{
+                        dialog.dismiss();
+                        Toast.makeText(LoginActivity.this, "Email or Password Wrong!", Toast.LENGTH_SHORT).show();
+                    }
+
+
+
+                } catch (JSONException e) {
+
+
+
+                    Toast.makeText(LoginActivity.this, "Error "+e.toString(), Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                    dialog.dismiss();
+                }
+            }
+
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                dialog.dismiss();
+                Toast.makeText(LoginActivity.this, "Error "+error.toString(), Toast.LENGTH_SHORT).show();
+
+            }
+        })
+
+        {
+            @Nullable
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+
+                params.put("email", email);  ///add data mysql
+                params.put("password", password);
+                return params;
+
+            }
+        };
+
+        RequestQueue requestQueue= Volley.newRequestQueue(getApplicationContext());
+        requestQueue.add(stringRequest);
+
+    }
+
+
+
+
+
+   /* public void Login( View view) {
 
         if (ed_email.getText().toString().equals("")) {
             Toast.makeText(this, "Enter Email", Toast.LENGTH_SHORT).show();
         } else if (ed_password.getText().toString().equals("")) {
             Toast.makeText(this, "Enter Password", Toast.LENGTH_SHORT).show();
         } else {
-
 
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setMessage("Please Wait..");
@@ -96,6 +209,7 @@ public class LoginActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(String response) {
                     progressDialog.dismiss();
+
 
 
 
@@ -135,6 +249,8 @@ public class LoginActivity extends AppCompatActivity {
         }
 
     }
+
+    */
         @Override
         public void onBackPressed () {
 

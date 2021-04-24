@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Raleway:ital@0;1&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Questrial', sans-serif;
+	
+
+}
+
+.sidebar{
+	width: 345px;
+	position: fixed;
+	height: 100%;
+	background: green;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	transition: width 300ms;
+}
+
+.sidebar-projectname{
+	height: 90px;
+	padding: 1rem 0rem 1rem 2rem;
+	color: white;
+}
+
+.sidebar-manu {
+	margin-top: 1rem;
+}
+
+.sidebar-manu li{
+	width: 100%;
+	margin-bottom: 1.3rem;
+	padding-left: 2rem;
+	
+}
+
+.sidebar-manu a{
+	display: block;
+	color: white;
+	font-size: 1.1rem;
+	padding-left: 1rem;
+	text-decoration: none;
+}
+
+.sidebar-manu a.active{
+	background: white;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	color: green;
+	border-radius: 45px 0px 0px 45px;
+}
+
+.sidebar-manu a span:first-child{
+	font-size: 1.5rem;
+	padding-right: 1rem;
+}
+
+#nav-taggle:checked + .sidebar{
+	width: 70px;
+}
+
+#nav-taggle:checked + .sidebar .sidebar-manu h2 span,
+#nav-taggle:checked + .sidebar li  {
+	padding-left: 1rem;
+	text-align: center;
+}
+
+#nav-taggle:checked + .sidebar .sidebar-projectname h2 span:last-child,
+#nav-taggle:checked + .sidebar li a span:last-child{
+	display: none;
+}
+
+
+
+.main-content{
+	margin-left: 345px;
+	transition: margin-left 300ms;
+}
+
+#nav-taggle:checked ~ .main-content{
+	margin-left: 70px;
+}
+
+#nav-taggle:checked ~ .main-content header{
+	width: calc(100% - 70px);
+	left: 70px;
+}
+header{
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, .2);
+	position: fixed;
+	left: 345px;
+	width: calc(100% - 345px);
+	top: 0;
+	z-index: 100;
+	transition: left 300ms;
+}
+
+
+#nav-taggle{
+	display: none;
+}
+
+
+header h2{
+	color: #222;
+	
+}
+
+header label span {
+	font-size: 1.7rem;
+	padding-left: 1rem;
+}
+
+.user-admin{
+	display: flex;
+	align-items: center;
+}
+
+.user-admin i{
+	border-radius: 50%;
+	margin-right: .5rem;
+}
+
+.user-admin small {
+	display: inline-block;
+	color: grey;
+	margin-left: 1rem;	
+	
+}
+
+main{
+	margin-top: 50px;
+	padding: 2rem 1.5rem;
+	padding-bottom: 0;
+	background: #d7eedd;
+	min-height: calc(100vh - 90px);
+	text-decoration: none;
+}
+
+.cards{
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
+
+.card-single{
+	display: flex;
+	justify-content: space-between;
+	background: white;
+	padding: 2rem;
+	border-radius: 4px;
+
+}
+
+.card-single h3 {
+	font-size: 1rem;
+	color: grey;
+	margin-top: 1rem;
+}
+
+.card-single span:first-child {
+	font-size: 2.5rem;
+	color: green;
+}
+
+
+@media only screen and (max-width: 1200px ){
+
+	 .sidebar{
+		width: 70px;
+	}
+
+	.sidebar .sidebar-projectname,
+	.sidebar li{
+		padding-left: 1rem;
+		text-align: center;
+	}
+	
+	 .sidebar .sidebar-manu h2 span,
+	 .sidebar li  {
+		padding-left: 1rem;
+		text-align: center;
+	}
+	
+	 .sidebar .sidebar-projectname:hover h2 span:last-child,
+	 .sidebar li a span:last-child{
+		display: none;
+	}
+	
+	
+	
+	.main-content{
+		margin-left: 345px;
+		transition: margin-left 300ms;
+	}
+	
+	.main-content{
+		margin-left: 70px;
+	}
+	
+	.main-content header{
+		width: calc(100% - 70px);
+		left: 70px;
+	}
+
+
+	
+
+}
+
+@media only screen and (max-width: 960px ){
+	.cards{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.recent-grid{
+
+		grid-template-columns: 60% 40%;
+
+	}
+
+	.sidebar{
+		left:-100% !important;
+	}
+
+	header h2{
+		display: flex;
+		align-items: center;
+	}
+
+	header h2 label{
+		background: white;
+		padding-right: 1rem;
+		margin-right: 1rem;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center !important;
+	}
+
+	header h2 span {
+		text-align: center;
+	}
+
+	.main-content{
+		width: 100%;
+		margin-left: 0rem;
+	}
+	header{
+		width: 100% !important;
+		left: 0 !important;
+	}
+
+	
+	
+}
+
+@media only screen and (max-width: 768px ){
+	.cards{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.recent-grid{
+
+		grid-template-columns: 100%;
+
+	}
+
+
+	 header h2 {
+		display: flex;
+		align-items: center;
+		font-size: 1rem;
+	}
+	header h4{
+		font-size: .8rem;
+	}
+	
+	header h2 label{
+		background: white;
+		padding-right: 1rem;
+		margin-right: 1rem;
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center !important;
+	}
+
+	header h2 span {
+		text-align: center;
+	}
+
+
+
+	.main-content{
+		width: 100%;
+		margin-left: 0rem;
+	}
+	header{
+		width: 100% !important;
+		left: 0 !important;
+	}
+
+	#nav-toggle:checked + .sidebar {
+		left: 0 !important;
+		z-index: 100;
+		width: 345px;
+	}
+
+
+	#nav-toggle:checked + .sidebar{
+		width: 345px;
+		z-index: 200;
+	}
+	#nav-toggle:checked + .sidebar .sidebar-projectname,
+	#nav-toggle:checked + .sidebar li{
+		padding-left: 2rem;
+		text-align: left;
+	}
+	
+	
+	#nav-toggle:checked + .sidebar .sidebar-projectname h2 span:last-child,
+	#nav-toggle:checked + .sidebar li a span:last-child{
+		display: inline;
+	}
+
+	#nav-toggle:checked ~ .main-content {
+		margin-left: 0rem ;
+	}
+	
+
+
+	
+}
+
+@media only screen and (max-width: 560px ){
+	.cards{
+		grid-template-columns: 100%
+	}
+	
+}
+
+
+.nav-bottom{
+	
+}
+
+
+/*-----------footer css start---------- */
+.footer-basic {
+	padding:40px 0;
+	background-color:#ffffff;
+	color:green;
+  }
+  
+  
+  
+  .footer-basic .social {
+	text-align:center;
+	padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+	font-size:24px;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	display:inline-block;
+	text-align:center;
+	border-radius:50%;
+	border:1px solid #ccc;
+	margin:0 8px;
+	color:inherit;
+	opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+	opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+	margin-top:15px;
+	text-align:center;
+	font-size:13px;
+	color:rgb(129, 129, 129);
+	margin-bottom:0;
+  }
+/*-----------footer css end---------- */
+
+
+
+
+
+  
+
+
+
+
+

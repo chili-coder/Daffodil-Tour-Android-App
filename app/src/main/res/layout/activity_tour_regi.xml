@@ -53,7 +53,7 @@
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/id_tour_regi"
+            android:id="@+id/idstudent_tour_regi"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
@@ -67,34 +67,6 @@
             android:padding="8dp" />
 
         <EditText
-            android:id="@+id/section_tour_regi"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="40dp"
-            android:background="@drawable/from_btn"
-            android:ems="10"
-            android:fontFamily="@font/didact_gothic"
-            android:hint="Section"
-            android:inputType="textPersonName"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/batch_tour_regi"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="40dp"
-            android:background="@drawable/from_btn"
-            android:ems="10"
-            android:fontFamily="@font/didact_gothic"
-            android:hint="Batch"
-            android:inputType="textPersonName"
-            android:padding="8dp" />
-
-        <EditText
             android:id="@+id/dept_tour_regi"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -104,7 +76,21 @@
             android:background="@drawable/from_btn"
             android:ems="10"
             android:fontFamily="@font/didact_gothic"
-            android:hint="Dept."
+            android:hint="Dept"
+            android:inputType="textPersonName"
+            android:padding="8dp" />
+
+        <EditText
+            android:id="@+id/date_tour_regi"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/from_btn"
+            android:ems="10"
+            android:fontFamily="@font/didact_gothic"
+            android:hint="Date"
             android:inputType="textPersonName"
             android:padding="8dp" />
 
@@ -123,7 +109,7 @@
             android:padding="8dp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/tourRgi"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
@@ -135,6 +121,16 @@
             android:text="Submit"
             android:textAllCaps="false"
             android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/regitourText"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="@color/purple_700"
+            android:layout_height="wrap_content"
+            android:text="" />
 
     </LinearLayout>
 
